@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sortowanie bąbelkowe</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+  <style>
+    input {
+      max-width: 100px;
+    }
+    form {
+      min-width: 455px;
+    }
+  </style>
+  <body class="d-flex flex-column min-vh-100">
+    <header class="text-bg-dark p-3">
+      <h1 class="text-center text-uppercase fw-light">
+        Sortowanie bąbelkowe
+      </h1>
+    </header>
+
+    <main class="d-flex flex-fill row m-0">
+      <section
+        class="col-lg-6 d-flex justify-content-center align-items-center left"
+      >
+        <form
+          action="index.html"
+          class="text-bg-light p-5 m-5 rounded-3 border"
+        >
+          <div class="mb-3 d-flex justify-content-end pe-2">
+            <label for="elements" class="d-flex align-items-center pe-3">
+              Ilość elementów tablicy:
+            </label>
+            <input
+              type="number"
+              class="form-control"
+              id="elements"
+              min="1"
+            />
+          </div>
+
+          <div class="mb-3 d-flex justify-content-end pe-2">
+            <label for="minimum" class="d-flex align-items-center pe-3">
+              Minimalna wartość w tablicy:
+            </label>
+            <input
+              type="number"
+              class="form-control"
+              id="minimum"
+              min="1"
+            />
+          </div>
+
+          <div class="mb-3 d-flex justify-content-end pe-2">
+            <label for="maximum" class="d-flex align-items-center pe-3">
+              Maksymalna wartość w tablicy:
+            </label>
+            <input
+              type="number"
+              class="form-control"
+              id="maximum"
+              min="1"
+            />
+          </div>
+
+          <div class="d-lg-flex justify-content-center mt-3 mb-0 d-sm-block">
+            <button
+              class="btn btn-dark m-1 col-lg-4 col-12 p-2"
+              id="createArray"
+            >
+              Utwórz tablicę
+            </button>
+
+            <button
+              class="btn btn-dark m-1 col-lg-4 col-12 p-2"
+              id="sortArray"
+            >
+              Sortuj tablicę
+            </button>
+
+            <button
+              class="btn btn-dark m-1 col-lg-4 col-12 p-2"
+              id="reset"
+            >
+              Wyczyść
+            </button>
+          </div>
+        </form>
+      </section>
+
+      <section
+        class="col-lg-6 d-flex flex-column justify-content-center align-items-center right"
+      >
+        <img
+          src="./obrazek.gif"
+          alt="Sortowanie bąbelkowe"
+          class="img-fluid w-75 m-5"
+          id="imageSort"
+        />
+      </section>
+    </main>
+
+    <footer class="text-bg-dark p-3">&copy; 2025</footer>
+
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
